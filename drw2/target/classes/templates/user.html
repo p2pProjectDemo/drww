@@ -3,8 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
 </head>
 <body>
-狗安慰
+<div class="container">
+	<table class="table">
+		<tr>
+			<td><input type="text" id="card" class="form-control"></td>
+
+		</tr>
+		<tr>
+			<td>所属地区: <p class="bg-primary" id="addr"></p></td>
+			<td>性别: <p class="bg-primary" id="age"></p></td>
+			<td>出生日期: <p class="bg-primary" id="birth"></p></td>
+		</tr>
+	</table>
+</div>
+<script>
+	$("#card").blur(function () {
+		$.ajax({
+			type: "GET",
+			url: "/idCardResult",
+			data: {card:$("#card").val()},
+			// dataType: "json",
+			success: function(data){
+				console.log(data)
+
+				console.log(data.split(":"))
+				data = data.split(":")
+				for (let i = 0; i < data.length; i++) {
+					$("#addr").html(data[1])
+					$("#age").html(data[3])
+					$("#birth").html(data[5])
+				}
+			}
+		});
+		// console.log("aa----")
+	})
+
+</script>
 </body>
 </html>

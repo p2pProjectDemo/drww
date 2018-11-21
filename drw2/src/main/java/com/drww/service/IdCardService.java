@@ -27,7 +27,7 @@ public class IdCardService {
 	 * @return 返回身份证信息
 	 * @throws UnsupportedEncodingException
 	 */
-	public static String getIdCardDetail(String cardNo) throws UnsupportedEncodingException{
+	public static String getIdCardDetail(String cardNo){
 		// 获取身份证信息
 		IdCard idcard = getIdCardInfo(cardNo);
 
@@ -35,9 +35,9 @@ public class IdCardService {
 		StringBuffer news = new StringBuffer();
 
 		if (idcard != null) {
-			news.append("所属地区:"+idcard.getAtt()).append("\n");
-			news.append("出生日期:"+idcard.getBorn()).append("\n");
-			news.append("性别:"+idcard.getSex()).append("\n");
+			news.append("所属地区:"+idcard.getAtt()).append(":");
+			news.append("出生日期:"+idcard.getBorn()).append(":");
+			news.append("性别:"+idcard.getSex());
 		}
 
 		if(news.length() == 0){
@@ -96,10 +96,8 @@ public class IdCardService {
 	}
 
 	public static void main(String[] args){
-		try {
+
 			System.out.print(getIdCardDetail("410102199003071492"));
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+
 	}
 }
