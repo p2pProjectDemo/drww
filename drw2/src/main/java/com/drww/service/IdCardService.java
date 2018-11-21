@@ -31,6 +31,10 @@ public class IdCardService {
 		// 获取身份证信息
 		IdCard idcard = getIdCardInfo(cardNo);
 
+		System.out.println(cardNo);
+		String substring = cardNo.substring(6, 10);
+		System.out.println(substring);
+
 		// 存储文本信息
 		StringBuffer news = new StringBuffer();
 
@@ -38,6 +42,7 @@ public class IdCardService {
 			news.append("所属地区:"+idcard.getAtt()).append(":");
 			news.append("出生日期:"+idcard.getBorn()).append(":");
 			news.append("性别:"+idcard.getSex());
+
 		}
 
 		if(news.length() == 0){
@@ -71,6 +76,7 @@ public class IdCardService {
 				String born = "";
 				String sex = "";
 				String att = "";
+
 				if(doc.getElementsByTagName("idcard").item(i).getFirstChild() != null){
 					idcard = doc.getElementsByTagName("idcard").item(i).getFirstChild().getNodeValue();
 				}
