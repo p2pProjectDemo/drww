@@ -17,6 +17,7 @@ public class test {
 	public String test1(){
 		System.out.println("途径此处");
 		System.out.println("构建完成");
+		System.out.println("构建完成1");
 		return "user";
 	}
 }
