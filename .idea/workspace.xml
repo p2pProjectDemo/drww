@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c3a4bce-0be7-490b-823c-be3568a3aadb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/drw2/src/main/java/com/drww/service/IdCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/drw2/src/main/java/com/drww/service/IdCardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drw2/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/drw2/src/main/resources/templates/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drw2/target/classes/com/drww/service/IdCardService.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/drw2/target/classes/com/drww/controller/IdCardController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drw2/target/classes/com/drww/util/test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drw2/target/classes/rebel-remote.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drw2/target/classes/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drw2/target/classes/static/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/IdCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/IdCardController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,15 +30,17 @@
     <session id="61780660">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.57" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -56,17 +63,17 @@
         <counts>
           <entry key="dummy" value="14" />
           <entry key="html" value="328" />
-          <entry key="java" value="709" />
+          <entry key="java" value="1594" />
           <entry key="properties" value="55" />
-          <entry key="txt" value="31" />
+          <entry key="txt" value="33" />
           <entry key="xml" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="328" />
-          <entry key="JAVA" value="709" />
-          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="JAVA" value="1594" />
+          <entry key="PLAIN_TEXT" value="47" />
           <entry key="Properties" value="55" />
           <entry key="XML" value="18" />
         </counts>
@@ -100,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/service/IdCardService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+            <state relative-caret-position="1036">
+              <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,8 +128,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/IdCardController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="33" column="26" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="196">
+              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state relative-caret-position="336">
+              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drw2/src/main/resources/templates/user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="896">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -154,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="364">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -175,6 +182,9 @@
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="9ead8edb-e137-498e-a64b-11b54963d10f" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -189,10 +199,10 @@
         <option value="$PROJECT_DIR$/drw2/src/main/java/com/drww/service/IdCard.java" />
         <option value="$PROJECT_DIR$/drw2/src/main/java/com/drww/dao/test.java" />
         <option value="$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/IdCard.java" />
-        <option value="$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/IdCardController.java" />
         <option value="$PROJECT_DIR$/drw2/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/drw2/src/main/java/com/drww/service/IdCardService.java" />
         <option value="$PROJECT_DIR$/drw2/src/main/resources/templates/user.html" />
+        <option value="$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/IdCardController.java" />
       </list>
     </option>
   </component>
@@ -317,7 +327,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -366,9 +376,16 @@
               <item name="drw2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="drww" type="b2602c69:ProjectViewProjectNode" />
               <item name="drww" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="drw2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="drww" type="b2602c69:ProjectViewProjectNode" />
@@ -378,7 +395,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,14 +408,14 @@
     <property name="SearchEverywhereHistoryKey" value="pom&#9;FILE&#9;file://F:/drww/drw2/pom.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542796155334" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542798309097" />
     <property name="last_opened_file_path" value="E:/gitRepository" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.RemoteServersConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -468,6 +485,8 @@
       <workItem from="1542783578400" duration="119000" />
       <workItem from="1542783826110" duration="2811000" />
       <workItem from="1542787541162" duration="4956000" />
+      <workItem from="1542796617054" duration="988000" />
+      <workItem from="1542797680934" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="zzz">
       <created>1542711260182</created>
@@ -511,11 +530,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542790034450</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="idcard提交">
+      <created>1542796754283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1542796754283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28014000" />
+    <option name="totallyTimeSpent" value="29609000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,8 +554,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4960981" visible="true" weight="0.13432837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4960981" visible="true" weight="0.20415778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -547,8 +574,8 @@
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49840087" weight="0.38350055" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.32887402" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159913" side_tool="true" weight="0.38350055" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4978678" weight="0.32664436" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5021322" side_tool="true" weight="0.32887402" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.30289534" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -586,11 +613,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="E:/gitRepository" />
+    </ignored-roots>
     <MESSAGE value="zzz" />
     <MESSAGE value="第二次提交测试" />
     <MESSAGE value="idcard" />
     <MESSAGE value="idcard12" />
-    <option name="LAST_COMMIT_MESSAGE" value="idcard12" />
+    <MESSAGE value="idcard提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="idcard提交" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/drw2/src/main/resources/logback.xml">
@@ -633,6 +664,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/service/IdCardService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1036">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drw2/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -640,17 +681,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/test.java">
+    <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/service/IdCardService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+        <state relative-caret-position="336">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -659,25 +693,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/drw2/src/main/resources/templates/user.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="896">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/App.java">
+    <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drw2/src/main/java/com/drww/controller/IdCardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="196">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
