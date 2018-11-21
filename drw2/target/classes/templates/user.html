@@ -15,8 +15,9 @@
 		</tr>
 		<tr>
 			<td>所属地区: <p class="text-danger" id="addr"></p></td>
-			<td>性别: <p class="text-danger" id="age"></p></td>
+			<td>性别: <p class="text-danger" id="sex"></p></td>
 			<td>出生日期: <p class="text-danger" id="birth"></p></td>
+			<td>年龄: <p class="text-danger" id="age"></p></td>
 		</tr>
 	</table>
 </div>
@@ -34,8 +35,9 @@
 				data = data.split(":")
 				for (let i = 0; i < data.length; i++) {
 					$("#addr").html(data[1])
-					$("#age").html(data[3])
-					$("#birth").html(data[5])
+					$("#birth").html(data[3])
+					$("#sex").html(data[5])
+					$("#age").html(data[7])
 				}
 			}
 		});

@@ -10,6 +10,8 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * className:IdCardService
@@ -34,6 +36,16 @@ public class IdCardService {
 		System.out.println(cardNo);
 		String substring = cardNo.substring(6, 10);
 		System.out.println(substring);
+		Date date = new Date();
+
+		SimpleDateFormat year = new SimpleDateFormat("yyyy");
+
+		String year1 = year.format(date);
+		System.out.println(year1);
+
+
+		int fullYear = Integer.valueOf(year1)-Integer.valueOf(substring);
+		System.out.println(fullYear);
 
 		// 存储文本信息
 		StringBuffer news = new StringBuffer();
@@ -41,8 +53,8 @@ public class IdCardService {
 		if (idcard != null) {
 			news.append("所属地区:"+idcard.getAtt()).append(":");
 			news.append("出生日期:"+idcard.getBorn()).append(":");
-			news.append("性别:"+idcard.getSex());
-
+			news.append("性别:"+idcard.getSex()).append(":");
+			news.append("年龄:"+fullYear);
 		}
 
 		if(news.length() == 0){
