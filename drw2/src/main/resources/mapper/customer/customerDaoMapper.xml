@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.drww.dao.customer.LoginDao">
+    <insert id="register" parameterType="customer">
+        insert into tb_user (userid,username,password,telephone,recommend) VALUES (seq_user_id.nextVal,#{userName,jdbcType=VARCHAR},#{passWord,jdbcType=VARCHAR},#{telephone,jdbcType=VARCHAR},#{recommend,jdbcType=VARCHAR})
+    </insert>
+
+    <select id="getByName" parameterType="String" resultType="customer">
+        select * from tb_user where username = #{userName}
+    </select>
+    <select id="SignIn" parameterType="customer" resultType="customer">
+        select * from tb_user where username = #{userName} and password = #{passWord}
+    </select>
+</mapper>

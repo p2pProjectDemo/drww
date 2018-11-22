@@ -29,7 +29,7 @@ public class IdCardController {
 	@ResponseBody
 	@RequestMapping("idCardResult")
 	public Object idCardResult(@RequestParam String card){
-/*11111111111111111*/
+			/*11111111111111111*/
 		String idCardDetail = getIdCardDetail(card);
 		System.out.println(idCardDetail);
 		return idCardDetail;
