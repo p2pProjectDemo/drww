@@ -27,7 +27,7 @@ public class FunctionServiceImpl implements FunctionService {
     @Override
     public List<Map> getListByPid(Integer Pid) {
         List<Map> childrenList = functionDao.getListByPid(Pid);
-        System.out.println(childrenList);
+
         return childrenList;
     }
 }

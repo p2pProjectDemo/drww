@@ -11,7 +11,6 @@
 		<script type="text/javascript" src="/js1/bootstrap.min.js"></script>
 		<script>
             $(function() {
-                alert(1)
                 $.ajax({
                     url : "/function/index",
                     type : "post",
@@ -30,7 +29,7 @@
                                 for (var j = 0; j < data[i].childrenList.length; j++) {
                                     str += "<ul id='"+data[i].NAME+"' class=\"nav nav-list collapse menu-second\" >\n" +
 												"<li>\n" +
-													"<a href=\"###\" onclick=\"showAtRight('userList.html')\"><i class=\"fa fa-users\"></i>"+data[i].childrenList[j].NAME+"</a>\n" +
+													"<a href=\"###\" onclick=\"showAtRight('"+data[i].childrenList[j].URL+"')\"><i class=\"fa fa-users\"></i>"+data[i].childrenList[j].NAME+"</a>\n" +
 												"</li>\n" +
                                      	   "</ul>";
                                 }
@@ -41,7 +40,6 @@
                     }
                 })
             })
-
 		</script>
 	</head>
 
