@@ -112,13 +112,53 @@ public class loginController {
         if(customer1!=null){
             session.setAttribute("CustomerName",map.get("userName"));
             session.setAttribute("CustomerPassWord",map.get("passWord"));
-            session.setMaxInactiveInterval(60000);
+            session.setMaxInactiveInterval(600000);
             map1.put("msg","1");
         }else{
             map1.put("msg","用户名或者密码不正确");
         }
         return map1;
     }
+
+    /**
+     * 检查是否登录
+     * @param session
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = "jySession")
+    public Object jySession(HttpSession session) {
+        Object customerName = session.getAttribute("CustomerName");
+        Map map = new HashMap();
+        if (customerName != null&&customerName!="") {
+            map.put("session", customerName);
+        } else {
+            map.put("session", "1");
+        }
+        return map;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = "singOut")
+    public Object singOut(HttpSession session){
+        //退出清除session
+        session.removeAttribute("CustomerName");
+        //再次检查
+        Object customerName = session.getAttribute("CustomerName");
+        Map map = new HashMap();
+        if (customerName != null&&customerName!="") {
+            map.put("session", "2");
+        } else {
+            map.put("session", "1");
+        }
+    return map;
+    }
+
+
+
+
+
+
 
 
 

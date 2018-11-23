@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,6 +24,22 @@
 }
 </style>
 <script type="text/javascript">
+
+  $(function () {
+      $.ajax({
+          type: "post", //请求方式
+          dataType: "json",
+          url: "customer/jySession", //发送请求地址
+          //请求成功后的回调函数有两个参数
+          success: function (data) {
+                if(data.session!=="1"){
+                    $("#uS").append("<div  STYLE='width: 120PX;' class=\"\"><a href=\"个人中心首页.html\" STYLE='width: 120PX;'  class=\"js-login\" >欢迎您，"+data.session+"</a></div>")
+                }else{
+                    $("#uS").append("<div class=\"\"><a href=\"login.html\" class=\"js-login\" title=\"登录\">登录</a></div>")
+                }
+          }
+      })
+  })
 // 上下滚动
 function AutoScroll(obj) {
     $(obj).find("ul:first").animate({
@@ -64,8 +81,8 @@ $(document).ready(function() {
         <li>
           <div class=""><a href="register.html" class="c-orange" title="免费注册">免费注册</a></div>
         </li>
-        <li>
-          <div class=""><a href="login.html" class="js-login" title="登录">登录</a></div>
+        <li id="uS">
+          <!--<div class=""><a href="login.html" class="js-login" title="登录">登录</a></div>-->
         </li>
       </ul>
     </div>

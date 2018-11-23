@@ -1,6 +1,23 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<script type="application/javascript">
+    $(function () {
+        $.ajax({
+            type: "post", //请求方式
+            dataType: "json",
+            url: "customer/jySession", //发送请求地址
+            //请求成功后的回调函数有两个参数
+            success: function (data) {
+                if(data.session!=="1"){
+                    $("#uS").append("<div  STYLE='width: 120PX;' class=\"\"><a href=\"个人中心首页.html\" STYLE='width: 120PX;'  class=\"js-login\" >欢迎您，"+data.session+"</a></div>")
+                }else{
+                    $("#uS").append("<div class=\"\"><a href=\"login.html\" class=\"js-login\" title=\"登录\">登录</a></div>")
+                }
+            }
+        })
+    })
+</script>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>p2p网贷平台</title>
@@ -35,8 +52,7 @@
                 <li>
                     <div class=""><a href="register.html" class="c-orange" title="免费注册">免费注册</a></div>
                 </li>
-                <li>
-                    <div class=""><a href="login.html" class="js-login" title="登录">登录</a></div>
+                <li  id="uS">
                 </li>
             </ul>
         </div>
@@ -88,7 +104,7 @@
                        onclick="javascript:changeImage();" href="#">看不清？换一张</a><a id="msg66"></a>
                 </li>
                 <li class="telNumber"><span class="dis">手机号码:</span>
-                    <input type="text" id="telephone">
+                    <input type="text" id="telephone" class="input input1">
                     <!--<a href="javascript:void(0);" class="button radius1 _getkey" id="sendPhone">获取验证码</a> --><span
                             id="phoneJy" data-info="请输入您的常用电话">请输入您的常用电话</span>
                 </li>
