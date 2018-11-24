@@ -61,6 +61,7 @@
 			<artifactId>shiro-spring</artifactId>
 			<version>1.4.0</version>
 		</dependency>
+
 		<!--thymeleaf整合shiro的标签-->
 		<dependency>
 			<groupId>com.github.theborakompanioni</groupId>
