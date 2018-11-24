@@ -14,6 +14,7 @@ public class User  implements Serializable {
     private String PWD;
     private String salt;
 
+
     public int getUserId() {
         return userId;
     }

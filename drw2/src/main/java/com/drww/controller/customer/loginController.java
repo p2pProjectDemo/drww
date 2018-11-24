@@ -130,9 +130,15 @@ public class loginController {
     public Object jySession(HttpSession session) {
         Object customerName = session.getAttribute("CustomerName");
         Map map = new HashMap();
-        if (customerName != null&&customerName!="") {
-            map.put("session", customerName);
-        } else {
+        if(customerName!=null) {
+            Customer customer = loginService.getByName(customerName.toString());
+            String cickName = customer.getNickname();
+            if (cickName!= null&&cickName!="") {
+                map.put("session", cickName);
+            } else {
+                map.put("session", "游客");
+            }
+        }else{
             map.put("session", "1");
         }
         return map;

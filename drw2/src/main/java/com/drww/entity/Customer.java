@@ -13,6 +13,15 @@ public class Customer {
    private  String passWord;
    private  String telephone;
    private  String recommend;  // 推荐人
+    private String nickname;
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
 
     public Customer() {
     }
