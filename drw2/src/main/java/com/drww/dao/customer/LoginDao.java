@@ -23,14 +23,14 @@ public interface LoginDao {
     Customer  SignIn(Customer customer);
 
     /**
-     * 根据用户名查询师傅存在
+     * 根据用户名查询是否存在
      * @param userName
      * @return
      */
     Customer getByName(String userName);
 
     /**
-     * 根据用户名查询师傅存在
+     * 根据用户名查询是否存在
      * @param userId
      * @return
      */

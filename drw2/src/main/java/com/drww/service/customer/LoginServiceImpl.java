@@ -16,6 +16,7 @@ import java.util.List;
  * createTime:2018-11-22 09:58
  */
 @Service
+@SuppressWarnings("all")
 public class LoginServiceImpl implements  LoginService {
 
     @Autowired
