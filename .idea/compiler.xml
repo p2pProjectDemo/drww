@@ -9,5 +9,9 @@
         <module name="drw2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="drw2" target="1.7" />
+      <module name="drww" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -31,7 +31,6 @@ public class functionCotrolle {
     @ResponseBody
     @RequestMapping(value = "index")
     public List<Map> index(Model model){
-        System.out.println(11);
         List<Map> list = functionService.getList();
         for (Map map : list) {
             map.put("childrenList",functionService.getListByPid(Integer.valueOf(map.get("ID").toString())));

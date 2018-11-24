@@ -9,25 +9,10 @@
 <link href="css/about.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="script/jquery.min.js"></script>
 <script type="text/javascript" src="script/common.js"></script>
-	<script type="application/javascript">
-        $(function () {
-            $.ajax({
-                type: "post", //请求方式
-                dataType: "json",
-                url: "customer/jySession", //发送请求地址
-                //请求成功后的回调函数有两个参数
-                success: function (data) {
-                    if(data.session!=="1"){
-                        $("#uS").append("<div  STYLE='width: 120PX;' class=\"\"><a href=\"个人中心首页.html\" STYLE='width: 120PX;'  class=\"js-login\" >欢迎您，"+data.session+"</a></div>")
-                    }else{
-                        $("#uS").append("<div class=\"\"><a href=\"login.html\" class=\"js-login\" title=\"登录\">登录</a></div>")
-                    }
-                }
-            })
-        })
-	</script>
+
 </head>
 <body>
+<<<<<<< HEAD
 <header>
   <div class="header-top min-width">
     <div class="container fn-clear"> <strong class="fn-left">咨询热线：400-668-6698<span class="s-time">服务时间：9:00 - 18:00</span></strong>
@@ -63,6 +48,13 @@
       </ul>
     </div>
   </div>
+=======
+<header id="thead">
+	<script>
+        $("#thead").load("head.html");
+	</script>
+
+>>>>>>> origin/master
 </header>
 <!--关于我们-->
 <div class="bg">
